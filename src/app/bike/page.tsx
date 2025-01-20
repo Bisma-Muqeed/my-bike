@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
 
-const watchData =[
+const bikesData =[
     { id: 1, name: 'BMW-NINE T', price: 1500000, description: 'Luxry Bike', image: '/bmw-ninet.png' },
     { id: 2, name: 'BMW', price: 800000, description: 'Luxry Bike', image: '/bmw.png' },
     { id: 3, name: 'DUKE', price: 110000, description: 'Luxry Bike', image: '/duke.png' },
@@ -15,13 +15,13 @@ const watchData =[
 
   return (
     <div>
-      <div className="watches">
-        {watchData.map((watch) => (
-          <div key={watch.id} className="watch-card">
-             <Image src={watch.image} alt={watch.name} />
-             <h3>{watch.name}</h3>
-             <p>{watch.description}</p>
-             <div className='price'>${watch.price}</div>
+      <div className="bikes">
+        {bikesData.map((bikes) => (
+          <div key={bikes.id} className="bikes-card">
+             <Image src={bikes.image} alt={bikes.name} />
+             <h3>{bikes.name}</h3>
+             <p>{bikes.description}</p>
+             <div className='price'>${bikes.price}</div>
              <button>Add to Cart</button>
           </div>
         ))}
